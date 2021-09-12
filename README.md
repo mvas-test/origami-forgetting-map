@@ -1,20 +1,20 @@
 # Origami Coding Test
 
 The objective of this task is design, implement and test a thread-safe 'forgetting map'.  
-A 'forgetting' map should hold associations between a ëkeyí and some ëcontentí. It should implement at least two methods:  
+A 'forgetting' map should hold associations between a ‚Äòkey‚Äô and some ‚Äòcontent‚Äô. It should implement at least two methods:  
 	1. add (add an association)  
 	2. find (find content using the specified key).  
 	
-It should hold as many associations as it can, but no more than x associations at any time, with x being a parameter passed to the constructor. The association that is least used is removed from the map when a new entry requires a space and the map is at capacity, where ìleast usedî relates to the number of times each association has been retrieved by the ìfindî method.  A suitable tie breaker should be used in the case where there are multiple least-used entries. 
+It should hold as many associations as it can, but no more than x associations at any time, with x being a parameter passed to the constructor. The association that is least used is removed from the map when a new entry requires a space and the map is at capacity, where ‚Äúleast used‚Äù relates to the number of times each association has been retrieved by the ‚Äúfind‚Äù method.  A suitable tie breaker should be used in the case where there are multiple least-used entries. 
 
 ## Implementation
 
 Java would be preferable.  
-You may use standard collections (HashMap, LinkedList, etc.) to build your solution but the use of a pre-existing library solution with the required behaviour, though an option in everyday work, is not what weíre looking for here. 
+You may use standard collections (HashMap, LinkedList, etc.) to build your solution but the use of a pre-existing library solution with the required behaviour, though an option in everyday work, is not what we‚Äôre looking for here. 
 
 ### Executing program
 
-Initialise the Forgetting map using a number for the max allowed associations:
+Initialise the Forgetting Map class using a number for the max allowed associations:
 ```java
 ForgettingMap<String, String> FORGETTING_MAP new ForgettingMap<>(5);
 ```
