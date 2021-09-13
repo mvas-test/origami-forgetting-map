@@ -18,7 +18,7 @@ Initialise the Forgetting Map class using a number for the max allowed associati
 ```java
 ForgettingMap<String, String> FORGETTING_MAP new ForgettingMap<>(5);
 ```
-and then use as may other Map.
+and then use as any other Map.
 
 ## Version History
 
